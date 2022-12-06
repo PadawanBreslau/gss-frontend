@@ -1,6 +1,13 @@
 import React, { Component } from "react";
-import { GetApp } from "@mui/icons-material";
-import { Link, Box, Typography, Button } from "@mui/material";
+import { TurnRight, Landscape, Castle, HighlightOff } from "@mui/icons-material";
+import {
+  Link,
+  Box,
+  Typography,
+  Button,
+  List,
+} from "@mui/material";
+import InternalListItem from "./InternalListItem";
 import Map from "../images/gss2-map2.png";
 
 class HomePage extends Component {
@@ -23,8 +30,8 @@ class HomePage extends Component {
             component="img"
             src={Map}
             sx={{
-              width: 600,
-              height:   450,              
+              width: 400,
+              height: 300,
             }}
           />
           <Typography variant="h3">
@@ -32,11 +39,38 @@ class HomePage extends Component {
             nadmiernych asfaltów
           </Typography>
         </Box>
-        <Button variant="contained" sx={{ mr: 1 }}>
-        <Link href="/gss20-full-official-2022.gpx" target="_blank" download>
-          <GetApp sx={{mr: 1, mt: .5}}/>
-          Całość trasy GSS 2.0 (po poprawkach)
-        </Link></Button>
+        <Button variant="contained" sx={{ mr: 1, mb: 2 }}>
+          <Link href="/gss20-full-official-2022.gpx" target="_blank" rel="noreferrer" download>
+            <Typography variant="h5" color="primary.lighter">
+              Pobierz całość trasy GSS 2.0 (12.2022) - GPX
+            </Typography>
+          </Link>
+        </Button>
+
+        <Box>
+          <List sx={{ width: "100%", bgcolor: "secondary.lighter" }}>
+            <InternalListItem
+              icon={<TurnRight />}
+              primaryText="Trasa"
+              secondaryText="Przebiega po istniejących szlakach"
+            />
+            <InternalListItem
+              icon={<Landscape />}
+              primaryText="Szczyty"
+              secondaryText="Przechodzi przez większość najwyższych szczytów Sudetów"
+            />
+            <InternalListItem
+              icon={<Castle />}
+              primaryText="Widoki"
+              secondaryText="Pełno widowiskowych i zabytkowych miejsc na trasie"
+            />
+            <InternalListItem
+              icon={<HighlightOff />}
+              primaryText="Nawierzchnia"
+              secondaryText="Asfalty na trasie zostały ograniczone do minimum"
+            />
+          </List>
+        </Box>
       </Box>
     );
   }

@@ -5,7 +5,7 @@ import {
   createTheme,
   useMediaQuery,
 } from "@mui/material";
-import { green, cyan, purple } from "@mui/material/colors";
+import { green, cyan, purple, yellow } from "@mui/material/colors";
 import Header from "./components/Header";
 import HomePage from "./components/HomePage";
 import GSSRoute from "./components/GSSRoute";
@@ -16,7 +16,10 @@ import "./styles/main.css";
 
 function App() {
   return (
-    <Container className="App" sx={{ width: "80%" }}>
+    <Container
+      className="App"
+      sx={{ width: "80%", backgroundColor: green[50], pb: 20 }}
+    >
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<HomePage />} />
@@ -33,27 +36,37 @@ function Layout() {
   const greenTheme = createTheme({
     palette: {
       primary: {
-        main: green[300],
-        lighter: green[100],
+        main: green[500],
+        lighter: green[50],
+        darker: green[800],
       },
       darker: {
         main: green[500],
       },
-      white: {
-        main: cyan[50],
+      secondary: {
+        main: yellow[300],
+        lighter: yellow[50],
       },
     },
     typography: {
       fontSize: 12,
+      fontFamily: "Georgia",
+      fontWeight: 600,
       h1: {
+        marginTop: "1rem",
+        marginBottom: "1rem",
         fontSize: "3.2rem",
         fontWeight: 600,
       },
       h2: {
+        marginTop: "1rem",
+        marginBottom: "1rem",
         fontSize: "2.4rem",
         fontWeight: 600,
       },
       h3: {
+        marginTop: "1rem",
+        marginBottom: "1rem",
         fontSize: "1.8rem",
         fontWeight: 500,
       },

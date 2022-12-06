@@ -1,11 +1,11 @@
 import { Link as RouterLink } from "react-router-dom";
-import { Button, Link } from "@mui/material";
+import { Button, Link, Typography} from "@mui/material";
 
 const MenuItem = ({ url, label }) => {
   return (
     <Button variant="contained" sx={{ mr: 1 }}>
-      <Link style={{ color: "white" }} component={RouterLink} to={url}>
-        {label}
+      <Link component={RouterLink} to={url}>
+        <Typography variant="h5" color="primary.lighter"  >{label}</Typography>
       </Link>
     </Button>
   );

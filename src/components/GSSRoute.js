@@ -1,9 +1,11 @@
-import React, { Component, useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { Box } from "@mui/material";
+import Jsona from "jsona";
+import Section from "./Section";
 
 const GSSRoute = () => {
   const [sections, setSections] = useState([]);
-  const gssAPIendpoint = "http://localhost:4632/api/v1/sections"
+  const gssAPIendpoint = "https://gss-api.herokuapp.com/api/v1/sections"
 
   useEffect(() => {
     fetch(gssAPIendpoint)
@@ -17,8 +19,15 @@ const GSSRoute = () => {
        });
  }, []);
 
-  console.log(sections);
-  return <Box />;
+  const dataFormatter = new Jsona();
+  const sectionsFormatted = dataFormatter.deserialize(sections);
+
+  console.log(sectionsFormatted);
+  
+  return( 
+  <Box>
+   {sectionsFormatted && sectionsFormatted.map((s) => (<Section data={s} />))}
+  </Box>);
 };
 
 export default GSSRoute;
