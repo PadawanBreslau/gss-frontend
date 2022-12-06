@@ -10,16 +10,20 @@ class Header extends Component {
         className="header"
         sx={{
           height: 50,
-        }}>
+          mb: 8
+        }}
+      >
         <Link href="/">
           <Logo />
         </Link>
-        <Box className="menu"
-        sx={{
-          mt: 3,
-          ml: 3,
-        }}>
-        {this.props.children}
+        <Box
+          className="menu"
+          sx={{
+            mt: 3,
+            ml: 3,
+          }}
+        >
+          {this.props.children}
         </Box>
       </Box>
     );

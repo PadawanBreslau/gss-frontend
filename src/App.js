@@ -34,6 +34,7 @@ function Layout() {
     palette: {
       primary: {
         main: green[300],
+        lighter: green[100],
       },
       darker: {
         main: green[500],
@@ -42,11 +43,27 @@ function Layout() {
         main: cyan[50],
       },
     },
+    typography: {
+      fontSize: 12,
+      h1: {
+        fontSize: "3.2rem",
+        fontWeight: 600,
+      },
+      h2: {
+        fontSize: "2.4rem",
+        fontWeight: 600,
+      },
+      h3: {
+        fontSize: "1.8rem",
+        fontWeight: 500,
+      },
+    },
   });
   const purpleTheme = createTheme({
     palette: {
       primary: {
         main: purple[300],
+        lighter: purple[100],
       },
       darker: {
         main: purple[500],
@@ -55,9 +72,25 @@ function Layout() {
         main: cyan[50],
       },
     },
+    typography: {
+      fontSize: 9,
+      h1: {
+        fontSize: "1.4rem",
+        fontWeight: 600,
+      },
+      h2: {
+        fontSize: "1.2rem",
+        fontWeight: 600,
+      },
+      h3: {
+        fontSize: "1rem",
+        fontWeight: 600,
+      },
+    },
   });
   const isMobileMatch = useMediaQuery("(max-width:600px)");
   const theme = isMobileMatch ? purpleTheme : greenTheme;
+
   return (
     <ThemeProvider theme={theme}>
       <Header>
