@@ -1,0 +1,13 @@
+.App{
+    width: 70%;
+}
+
+.logo{
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+}

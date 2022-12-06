@@ -1,24 +1,73 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route, Outlet } from "react-router-dom";
+import {
+  Container,
+  ThemeProvider,
+  createTheme,
+  useMediaQuery,
+} from "@mui/material";
+import { green, cyan, purple } from "@mui/material/colors";
+import Header from "./components/Header";
+import HomePage from "./components/HomePage";
+import GSSRoute from "./components/GSSRoute";
+import FKT from "./components/FKT";
+import Partners from "./components/Partners";
+import MenuItem from "./components/MenuItem";
+import "./styles/main.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container className="App" sx={{ width: "80%" }}>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<HomePage />} />
+          <Route path="route" element={<GSSRoute />} />
+          <Route path="fkt" element={<FKT />} />
+          <Route path="partners" element={<Partners />} />
+        </Route>
+      </Routes>
+    </Container>
+  );
+}
+
+function Layout() {
+  const greenTheme = createTheme({
+    palette: {
+      primary: {
+        main: green[300],
+      },
+      darker: {
+        main: green[500],
+      },
+      white: {
+        main: cyan[50],
+      },
+    },
+  });
+  const purpleTheme = createTheme({
+    palette: {
+      primary: {
+        main: purple[300],
+      },
+      darker: {
+        main: purple[500],
+      },
+      white: {
+        main: cyan[50],
+      },
+    },
+  });
+  const isMobileMatch = useMediaQuery("(max-width:600px)");
+  const theme = isMobileMatch ? purpleTheme : greenTheme;
+  return (
+    <ThemeProvider theme={theme}>
+      <Header>
+        <MenuItem url="/" label="O projekcie" />
+        <MenuItem url="/route" label="Trasa" />
+        <MenuItem url="/fkt" label="Rekordy" />
+        <MenuItem url="/partners" label="Partnerzy" />
+      </Header>
+      <Outlet />
+    </ThemeProvider>
   );
 }
 
