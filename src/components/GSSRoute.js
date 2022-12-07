@@ -7,7 +7,7 @@ const GSSRoute = () => {
   const [sections, setSections] = useState([]);
   const gssAPIendpoint = "https://gss-api.herokuapp.com/api/v1/sections"
 
-  /*
+  
   useEffect(() => {
     fetch(gssAPIendpoint)
        .then((response) => response.json())
@@ -18,9 +18,9 @@ const GSSRoute = () => {
           console.log(err.message);
        });
  }, []);
-*/
-  //const dataFormatter = new Jsona();
-  const sectionsFormatted = null; //dataFormatter.deserialize(sections);
+
+  const dataFormatter = new Jsona();
+  const sectionsFormatted = dataFormatter.deserialize(sections);
 
   return( 
   <Box>

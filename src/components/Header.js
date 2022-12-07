@@ -18,10 +18,11 @@ class Header extends Component {
         </Link>
         <Box
           className="menu"
-          sx={{
+          sx={(theme) =>({
             mt: marginTop,
-            ml: 1,
-          }}
+            ml: 12,
+            [theme.breakpoints.down("md")]: {ml: 1}
+          })}
         >
           {this.props.children}
         </Box>

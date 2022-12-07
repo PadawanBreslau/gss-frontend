@@ -5,9 +5,8 @@ import {
   createTheme,
   useMediaQuery,
   Box,
-  Link,
 } from "@mui/material";
-import { green, cyan, purple, yellow } from "@mui/material/colors";
+import { green, yellow } from "@mui/material/colors";
 import Header from "./components/Header";
 import HomePage from "./components/HomePage";
 import GSSRoute from "./components/GSSRoute";
@@ -22,7 +21,14 @@ function App() {
   return (
     <Container
       className="App"
-      sx={{ backgroundColor: green[50], pb: 20 }}
+      sx={(theme) => ({
+        width: "80  %",
+        backgroundColor: green[50],
+        pb: 20,
+        [theme.breakpoints.down("md")]: {
+          width: '100%'
+        }
+      })}
     >
       <Routes>
         <Route path="/" element={<Layout />}>
@@ -64,7 +70,6 @@ function Layout() {
         fontWeight: 600,
       },
       h2: {
-
         fontSize: "2.4rem",
         fontWeight: 600,
       },
@@ -115,7 +120,7 @@ function Layout() {
         fontWeight: 600,
       },
       p1: {
-        fontSize: '.6rem',
+        fontSize: ".6rem",
       },
     },
   });
@@ -129,17 +134,19 @@ function Layout() {
         <MenuItem url="/route" label="Trasa" />
         <MenuItem url="/fkt" label="Rekordy" />
         {!isMobileMatch && <MenuItem url="/partners" label="Partnerzy" />}
-        <a href='https://www.facebook.com/gssreloaded' target="_blank"><Box
-          component="img"
-          className="fb"
-          sx={(theme) => ({
-            width: 16,
-            height: 16,
-            ml: 10,
-            [theme.breakpoints.down("md")]: {ml: .5}
-          })}
-          src={fb}
-        /></a>
+        <a href="https://www.facebook.com/gssreloaded" target="_blank" rel="noreferrer">
+          <Box
+            component="img"
+            className="fb"
+            sx={(theme) => ({
+              width: 16,
+              height: 16,
+              ml: 10,
+              [theme.breakpoints.down("md")]: { ml: 0.5 },
+            })}
+            src={fb}
+          />
+        </a>
       </Header>
       <Outlet />
     </ThemeProvider>

@@ -14,17 +14,17 @@ class Partners extends Component {
         <Typography variant="h2">Wspierają nas</Typography>
         <ImageList sx={{ width: 800, height: 300 }} cols={3} rowHeight={256}>
           <ImageListItem sx={{ m: 2 }}>
-            <a href="https://poltrax.live" target="_blank">
+            <a href="https://poltrax.live" target="_blank" rel="noreferrer">
               <img src={pt} alt={"Poltrax"} loading="lazy" width="100%" />
             </a>
           </ImageListItem>
           <ImageListItem sx={{ m: 2 }}>
-            <a href="https://probit.com.pl/" target="_blank">
+            <a href="https://probit.com.pl/" target="_blank" rel="noreferrer">
               <img src={pb} alt={"Probit"} loading="lazy" width="100%" />
             </a>
           </ImageListItem>
           <ImageListItem sx={{ m: 2 }}>
-            <a href="https://visuality.pl/" target="_blank">
+            <a href="https://visuality.pl/" target="_blank" rel="noreferrer">
               <img src={vs} alt={"Visuality"} loading="lazy" width="100%" />
             </a>
           </ImageListItem>
@@ -32,7 +32,7 @@ class Partners extends Component {
         <Typography variant="h2">Partnerzy medialni</Typography>
         <ImageList sx={{ width: 800, height: 300 }} cols={3} rowHeight={256}>
           <ImageListItem sx={{ m: 2 }}>
-            <a href="https://zieloniwpodrozy.pl/" target="_blank">
+            <a href="https://zieloniwpodrozy.pl/" target="_blank" rel="noreferrer">
               <img
                 src={zl}
                 alt={"Zieloni w Podróży"}
@@ -42,7 +42,7 @@ class Partners extends Component {
             </a>
           </ImageListItem>
           <ImageListItem sx={{ m: 2 }}>
-            <a href="https://mapa-tursytyczna.pl" target="_blank">
+            <a href="https://mapa-tursytyczna.pl" target="_blank" rel="noreferrer">
               <img
                 src={mt}
                 alt={"Mapa Turystyczna"}
@@ -52,7 +52,7 @@ class Partners extends Component {
             </a>
           </ImageListItem>
           <ImageListItem sx={{ m: 2 }}>
-            <a href="https://gorskiewyrypy.pl/" target="_blank">
+            <a href="https://gorskiewyrypy.pl/" target="_blank" rel="noreferrer">
               <img
                 src={gw}
                 alt={"Górskie Wyrypy"}
