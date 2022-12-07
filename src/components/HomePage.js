@@ -1,14 +1,16 @@
 import React, { Component } from "react";
-import { TurnRight, Landscape, Castle, HighlightOff, QueryStats } from "@mui/icons-material";
 import {
-  Link,
-  Box,
-  Typography,
-  Button,
-  List,
-} from "@mui/material";
+  TurnRight,
+  Landscape,
+  Castle,
+  HighlightOff,
+  QueryStats,
+  GpsFixed,
+} from "@mui/icons-material";
+import { Link, Box, Typography, Button, List } from "@mui/material";
 import InternalListItem from "./InternalListItem";
-import Map from "../images/homepage2.jpg";
+import photo from "../images/homepage2.jpg";
+import Map from "../images/przebieg.png";
 
 class HomePage extends Component {
   render() {
@@ -28,17 +30,34 @@ class HomePage extends Component {
           <Box
             className="gssmap"
             component="img"
-            src={Map}
+            src={photo}
             sx={{
-              width: '90%',
-              height: '90%',
+              width: "90%",
+              height: "90%",
             }}
           />
         </Box>
         <Button variant="contained" sx={{ mr: 1, mb: 2 }}>
-          <Link href="/gss20-full-official-2022.gpx" target="_blank" rel="noreferrer" download>
+          <Link
+            href="/gss20-full-official-2022.gpx"
+            target="_blank"
+            rel="noreferrer"
+            download
+          >
             <Typography variant="h5" color="primary.lighter">
               Pobierz całość trasy GSS 2.0 (12.2022) - GPX
+            </Typography>
+          </Link>
+        </Button>
+
+        <Button variant="contained" sx={{ mr: 1, mb: 2 }}>
+          <Link
+            href="https://poltrax.live/gss2"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Typography variant="h5" color="primary.lighter">
+              Interaktywna mapa trasy
             </Typography>
           </Link>
         </Button>
@@ -70,8 +89,28 @@ class HomePage extends Component {
               primaryText="Nawierzchnia"
               secondaryText="Asfalty i trasy po równym na trasie zostały ograniczone do minimum. Życie jest za krótkie by po takich chodzić :)"
             />
+            <InternalListItem
+              icon={<HighlightOff />}
+              primaryText="Nawierzchnia"
+              secondaryText="Asfalty i trasy po równym na trasie zostały ograniczone do minimum. Życie jest za krótkie by po takich chodzić :)"
+            />
+            <InternalListItem
+              icon={<GpsFixed />}
+              primaryText="Trackery GPS"
+              secondaryText="Chętnym do przejścia całej trasy oferujemy nieodpłatnie trackery GPS"
+            />
           </List>
         </Box>
+        <Typography variant="h2">Przebieg trasy</Typography>
+        <Box
+          className="gssmap"
+          component="img"
+          src={Map}
+          sx={{
+            width: "90%",
+            height: "90%",
+          }}
+        />
       </Box>
     );
   }
