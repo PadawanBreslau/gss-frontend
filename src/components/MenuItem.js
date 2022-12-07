@@ -3,7 +3,7 @@ import { Button, Link, Typography} from "@mui/material";
 
 const MenuItem = ({ url, label }) => {
   return (
-    <Button variant="contained" sx={{ mr: 1 }}>
+    <Button variant="contained" sx={{ mr: 1, p: .75 }}>
       <Link component={RouterLink} to={url}>
         <Typography variant="h5" color="primary.lighter"  >{label}</Typography>
       </Link>

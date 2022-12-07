@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { TurnRight, Landscape, Castle, HighlightOff } from "@mui/icons-material";
+import { TurnRight, Landscape, Castle, HighlightOff, QueryStats } from "@mui/icons-material";
 import {
   Link,
   Box,
@@ -8,7 +8,7 @@ import {
   List,
 } from "@mui/material";
 import InternalListItem from "./InternalListItem";
-import Map from "../images/gss2-map2.png";
+import Map from "../images/homepage2.jpg";
 
 class HomePage extends Component {
   render() {
@@ -30,14 +30,10 @@ class HomePage extends Component {
             component="img"
             src={Map}
             sx={{
-              width: 400,
-              height: 300,
+              width: '90%',
+              height: '90%',
             }}
           />
-          <Typography variant="h3">
-            500km trasy, 20km przewyższenia, mnóstwo gór, historii i bez
-            nadmiernych asfaltów
-          </Typography>
         </Box>
         <Button variant="contained" sx={{ mr: 1, mb: 2 }}>
           <Link href="/gss20-full-official-2022.gpx" target="_blank" rel="noreferrer" download>
@@ -50,24 +46,29 @@ class HomePage extends Component {
         <Box>
           <List sx={{ width: "100%", bgcolor: "secondary.lighter" }}>
             <InternalListItem
+              icon={<QueryStats />}
+              primaryText="Statystyki"
+              secondaryText="516km długości, 20,000 metrów podejść, większość najważniejszych szczytów polskich Sudetów"
+            />
+            <InternalListItem
               icon={<TurnRight />}
               primaryText="Trasa"
-              secondaryText="Przebiega po istniejących szlakach"
+              secondaryText="Przebiega w ponad 99% przebiegu po istniejących szlakach turystycznych"
             />
             <InternalListItem
               icon={<Landscape />}
               primaryText="Szczyty"
-              secondaryText="Przechodzi przez większość najwyższych szczytów Sudetów"
+              secondaryText="Śnieżke, Śnieżnik, Szczeliniec, Jagodna, Wielka Sowa, Włodzicka Góra, Waligóra, Skalnik, Sokoliki, Borówkowa, Smrek, Smrk i wiele, wiele innych"
             />
             <InternalListItem
               icon={<Castle />}
               primaryText="Widoki"
-              secondaryText="Pełno widowiskowych i zabytkowych miejsc na trasie"
+              secondaryText="Pełno widowiskowych miejsc na trasie zarówno dla pasjonatów dziczy, jak i fanów zabytków"
             />
             <InternalListItem
               icon={<HighlightOff />}
               primaryText="Nawierzchnia"
-              secondaryText="Asfalty na trasie zostały ograniczone do minimum"
+              secondaryText="Asfalty i trasy po równym na trasie zostały ograniczone do minimum. Życie jest za krótkie by po takich chodzić :)"
             />
           </List>
         </Box>

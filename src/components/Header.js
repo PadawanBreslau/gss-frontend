@@ -5,22 +5,22 @@ import Logo from "./Logo";
 
 class Header extends Component {
   render() {
+    const marginTop = this.props.isMobile ? 1 : 4
     return (
       <Box
         className="header"
         sx={{
-          height: 50,
-          mb: 8
+          height: "1%",
         }}
       >
-        <Link href="/">
-          <Logo />
+        <Link to="/">
+          <Logo isMobile={this.props.isMobile}/>
         </Link>
         <Box
           className="menu"
           sx={{
-            mt: 3,
-            ml: 3,
+            mt: marginTop,
+            ml: 1,
           }}
         >
           {this.props.children}

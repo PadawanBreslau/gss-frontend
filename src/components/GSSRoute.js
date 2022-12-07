@@ -22,11 +22,9 @@ const GSSRoute = () => {
   const dataFormatter = new Jsona();
   const sectionsFormatted = dataFormatter.deserialize(sections);
 
-  console.log(sectionsFormatted);
-  
   return( 
   <Box>
-   {sectionsFormatted && sectionsFormatted.map((s) => (<Section data={s} />))}
+     {sectionsFormatted && sectionsFormatted.map((s) => (<Section data={s} />))}
   </Box>);
 };
 
