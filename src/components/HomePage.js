@@ -90,11 +90,6 @@ class HomePage extends Component {
               secondaryText="Asfalty i trasy po równym na trasie zostały ograniczone do minimum. Życie jest za krótkie by po takich chodzić :)"
             />
             <InternalListItem
-              icon={<HighlightOff />}
-              primaryText="Nawierzchnia"
-              secondaryText="Asfalty i trasy po równym na trasie zostały ograniczone do minimum. Życie jest za krótkie by po takich chodzić :)"
-            />
-            <InternalListItem
               icon={<GpsFixed />}
               primaryText="Trackery GPS"
               secondaryText="Chętnym do przejścia całej trasy oferujemy nieodpłatnie trackery GPS"
