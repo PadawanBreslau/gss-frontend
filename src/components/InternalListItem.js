@@ -1,6 +1,12 @@
-import { ListItem, ListItemAvatar, Avatar, ListItemText } from "@mui/material";
+import { ListItem, ListItemAvatar, Avatar, ListItemText, Link } from "@mui/material";
 
-const InternalListItem = ({ icon, avatar, primaryText, secondaryText }) => {
+const InternalListItem = ({
+  icon,
+  avatar,
+  primaryText,
+  secondaryText,
+  url,
+}) => {
   return (
     <ListItem>
       <ListItemAvatar>
@@ -8,16 +14,34 @@ const InternalListItem = ({ icon, avatar, primaryText, secondaryText }) => {
         {avatar && (
           <Avatar
             src={avatar}
-            sx={(theme) => ({ width: 56, height: 56, mr: 2, [theme.breakpoints.down("md")]: {width: 32, height: 32} })}
+            sx={(theme) => ({
+              width: 56,
+              height: 56,
+              mr: 2,
+              [theme.breakpoints.down("md")]: { width: 32, height: 32 },
+            })}
           />
         )}
       </ListItemAvatar>
-      <ListItemText
-        primaryTypographyProps={{ fontSize: "1.2rem" }}
-        secondaryTypographyProps={{ fontSize: ".9rem" }}
-        primary={primaryText}
-        secondary={secondaryText}
-      />
+      {!url && (
+        <ListItemText
+          primaryTypographyProps={{ fontSize: "1.5rem" }}
+          secondaryTypographyProps={{ fontSize: "1.2rem" }}
+          primary={primaryText}
+          secondary={secondaryText}
+        />
+      )}
+
+      {url && (
+        <Link href={url} target="_blank" color='primary.darker'>
+          <ListItemText
+            primaryTypographyProps={{ fontSize: "1.5rem" }}
+            secondaryTypographyProps={{ fontSize: "1.2rem" }}
+            primary={primaryText}
+            secondary={secondaryText}
+          />
+        </Link>
+      )}
     </ListItem>
   );
 };

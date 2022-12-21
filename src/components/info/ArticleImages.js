@@ -1,0 +1,15 @@
+export { default as zielony1 } from "../../images/articles/zielony1.jpg";
+export { default as zielony2 } from "../../images/articles/zielony2.jpg";
+export { default as zielony3 } from "../../images/articles/zielony3.jpg";
+export { default as zielony4 } from "../../images/articles/zielony4.jpg";
+export { default as zielony5 } from "../../images/articles/zielony5.jpg";
+export { default as zielony6 } from "../../images/articles/zielony6.jpg";
+export { default as zielony7 } from "../../images/articles/zielony7.jpg";
+export { default as zielony8 } from "../../images/articles/zielony8.jpg";
+export { default as zielony9 } from "../../images/articles/zielony9.jpg";
+export { default as zielony10 } from "../../images/articles/zielony10.jpg";
+export { default as zielony11 } from "../../images/articles/zielony11.jpg";
+export { default as zielony12 } from "../../images/articles/zielony12.jpg";
+export { default as zielony13 } from "../../images/articles/zielony13.jpg";
+export { default as zielony14 } from "../../images/articles/zielony14.jpg";
+export { default as zielony15 } from "../../images/articles/zielony15.jpg";

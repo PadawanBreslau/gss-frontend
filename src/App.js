@@ -2,20 +2,34 @@ import { Routes, Route, Outlet } from "react-router-dom";
 import {
   Container,
   ThemeProvider,
-  createTheme,
   useMediaQuery,
   Box,
 } from "@mui/material";
-import { green, yellow } from "@mui/material/colors";
+import { green } from "@mui/material/colors";
 import Header from "./components/Header";
 import HomePage from "./components/HomePage";
 import GSSRoute from "./components/GSSRoute";
 import FKT from "./components/FKT";
 import Partners from "./components/Partners";
 import MenuItem from "./components/MenuItem";
+import Panel from "./components/info/Panel";
+import Support from "./components/info/Support";
+import Approach from "./components/info/Approach";
+import Accomodation from "./components/info/Accomodation";
+import Supplies from "./components/info/Supplies";
+import Tips from "./components/info/Tips";
+import Media from "./components/info/Media";
+import Movies from "./components/info/Movies";
+import Written from "./components/info/Written";
+import Gallery from "./components/info/Gallery";
+import Trivia from "./components/info/Trivia";
+import Monuments from "./components/info/Monuments";
 import fb from "./images/fb.png";
+import greenTheme from "./components/themes/greenTheme";
+import mobileTheme from "./components/themes/mobileTheme";
 
 import "./styles/main.css";
+import { MonochromePhotosOutlined } from "@mui/icons-material";
 
 function App() {
   return (
@@ -36,6 +50,21 @@ function App() {
           <Route path="route" element={<GSSRoute />} />
           <Route path="fkt" element={<FKT />} />
           <Route path="partners" element={<Partners />} />
+          <Route path="info" element={<Panel />} />
+          <Route path="support" element={<Support />} />
+          <Route path="trail" element={<Panel />} />
+          <Route path="trivia" element={<Trivia />} />
+          <Route path="media" element={<Panel />} />
+          <Route path="approach" element={<Approach />} />
+          <Route path="accomodation" element={<Accomodation />} />
+          <Route path="supplies" element={<Supplies />} />
+          <Route path="tips" element={<Tips />} />
+          <Route path="relations" element={<Media />} />
+          <Route path="movies" element={<Movies />} />
+          <Route path="written" element={<Written />} />
+          <Route path="galleries" element={<Gallery />} />
+          <Route path="monuments" element={<Monuments />} />
+
         </Route>
       </Routes>
     </Container>
@@ -43,87 +72,6 @@ function App() {
 }
 
 function Layout() {
-  const greenTheme = createTheme({
-    palette: {
-      primary: {
-        main: green[500],
-        mid: green[250],
-        lighter: green[50],
-        darker: green[800],
-      },
-      darker: {
-        main: green[500],
-      },
-      secondary: {
-        main: yellow[300],
-        lighter: yellow[50],
-      },
-    },
-    typography: {
-      fontSize: 12,
-      fontFamily: "Georgia",
-      fontWeight: 600,
-      h1: {
-        marginTop: "1rem",
-        marginBottom: "1rem",
-        fontSize: "3.2rem",
-        fontWeight: 600,
-      },
-      h2: {
-        fontSize: "2.4rem",
-        fontWeight: 600,
-      },
-      h3: {
-        marginTop: "1rem",
-        marginBottom: "1rem",
-        fontSize: "1.8rem",
-        fontWeight: 500,
-      },
-    },
-  });
-  const mobileTheme = createTheme({
-    palette: {
-      primary: {
-        main: green[500],
-        mid: green[250],
-        lighter: green[50],
-        darker: green[800],
-      },
-      darker: {
-        main: green[500],
-      },
-      secondary: {
-        main: yellow[300],
-        lighter: yellow[50],
-      },
-    },
-    typography: {
-      fontSize: 9,
-      h1: {
-        fontSize: "1.4rem",
-        fontWeight: 600,
-      },
-      h2: {
-        fontSize: "1.2rem",
-        fontWeight: 600,
-      },
-      h3: {
-        fontSize: "1rem",
-        fontWeight: 600,
-      },
-      h5: {
-        fontSize: ".7rem",
-        fontWeight: 600,
-      },
-      h6: {
-        fontSize: ".6rem",
-        fontWeight: 600,
-      },
-      p1: {
-        fontSize: ".6rem",
-      },
-    },
-  });
   const isMobileMatch = useMediaQuery("(max-width:600px)");
   const theme = isMobileMatch ? mobileTheme : greenTheme;
 
@@ -133,6 +81,7 @@ function Layout() {
         <MenuItem url="/" label="O projekcie" />
         <MenuItem url="/route" label="Trasa" />
         <MenuItem url="/fkt" label="Rekordy" />
+        <MenuItem url="/info" label="Baza Wiedzy" />
         {!isMobileMatch && <MenuItem url="/partners" label="Partnerzy" />}
         <a href="https://www.facebook.com/gssreloaded" target="_blank" rel="noreferrer">
           <Box

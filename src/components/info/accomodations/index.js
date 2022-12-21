@@ -1,0 +1,11 @@
+export {default as Accomodation50} from "./Accomodation50";
+export {default as Accomodation100} from "./Accomodation100";
+export {default as Accomodation150} from "./Accomodation150";
+export {default as Accomodation200} from "./Accomodation200";
+export {default as Accomodation250} from "./Accomodation250";
+export {default as Accomodation300} from "./Accomodation300";
+export {default as Accomodation350} from "./Accomodation350";
+export {default as Accomodation400} from "./Accomodation400";
+export {default as Accomodation450} from "./Accomodation450";
+export {default as Accomodation500} from "./Accomodation500";
+export {default as Accomodation550} from "./Accomodation550";
