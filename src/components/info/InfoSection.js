@@ -4,6 +4,7 @@ const InfoSection = ({
   children,
   image,
   imageAlt,
+  imageUrl,
   imageToLeft,
   header,
   source,
@@ -12,17 +13,46 @@ const InfoSection = ({
     <Box sx={{ width: "100%", display: "flex", flexDirection: "row" }}>
       <>
         {imageToLeft && (
-          <Box
-            component="img"
-            alt={imageAlt}
-            className="histImg"
-            sx={{
-              width: "50%",
-              height: "100%",
-            }}
-            src={image}
-          />
+          <Box sx={{ display: "flex", flexDirection: "column", width: "50%" }}>
+            <Box
+              component="img"
+              alt={imageAlt}
+              className="histImg"
+              sx={{
+                width: "100%",
+                height: "100%",
+              }}
+              src={image}
+            />
+            {imageAlt && (
+              <Box
+                sx={{
+                  backgroundColor: "secondary.main",
+                  mt: -1,
+                  height: 12,
+                  fontSize: ".6rem",
+                }}
+              >
+                <Typography variant="p" sx={{ p: 1 }}>
+                  {imageAlt}
+                </Typography>
+                <Link
+                  href={imageUrl}
+                  target="_blank"
+                  sx={{
+                    ml: 2,
+                    color: "primary.dark",
+                    fontWeight: 600,
+                    float: "right",
+                  }}
+                >
+                  Źródło
+                </Link>
+              </Box>
+            )}
+          </Box>
         )}
+
         <Box sx={{ width: "50%" }}>
           <Typography variant="h3" sx={{ textAlign: "center", mt: 7 }}>
             {header}
@@ -42,16 +72,44 @@ const InfoSection = ({
           </Box>
         </Box>
         {!imageToLeft && (
-          <Box
-            component="img"
-            alt={imageAlt}
-            className="histImg"
-            sx={{
-              width: "50%",
-              height: "100%",
-            }}
-            src={image}
-          />
+          <Box sx={{ display: "flex", flexDirection: "column", width: "50%" }}>
+            <Box
+              component="img"
+              alt={imageAlt}
+              className="histImg"
+              sx={{
+                width: "100%",
+                height: "100%",
+              }}
+              src={image}
+            />
+            {imageAlt && (
+              <Box
+                sx={{
+                  backgroundColor: "secondary.main",
+                  mt: -1,
+                  height: 12,
+                  fontSize: ".6rem",
+                }}
+              >
+                <Typography variant="p" sx={{ p: 1 }}>
+                  {imageAlt}
+                </Typography>
+                <Link
+                  href={imageUrl}
+                  target="_blank"
+                  sx={{
+                    ml: 2,
+                    color: "primary.dark",
+                    fontWeight: 600,
+                    float: "right",
+                  }}
+                >
+                  Źródło
+                </Link>
+              </Box>
+            )}
+          </Box>
         )}
       </>
     </Box>

@@ -15,6 +15,13 @@ import naroznik from "../../images/history/naroznik.jpeg";
 import karol from "../../images/history/karol.jpeg";
 import srebrna from "../../images/history/srebrna.jpg";
 import riese from "../../images/history/riese.jpg";
+import cerkiew from "../../images/history/cerkiew.jpeg";
+import chelmsko from "../../images/history/chelmsko.jpg";
+import karpniki from "../../images/history/karpniki.jpg";
+import mysla from "../../images/history/mysla.jpg";
+import witosz from "../../images/history/witosz.jpg";
+import wang from "../../images/history/wang.jpg";
+import henryk from "../../images/history/henryk.jpeg";
 
 const Monuments = () => {
   return (
@@ -117,7 +124,8 @@ const Monuments = () => {
 
         <InfoSection
           image={miedzylesie}
-          imageAlt="Autorstwa Jacek Halicki - Praca własna, CC BY 3.0, https://commons.wikimedia.org/w/index.php?curid=69173382"
+          imageUrl="https://commons.wikimedia.org/w/index.php?curid=69173382"
+          imageAlt="Autorstwa Jacek Halicki - Praca własna, CC BY 3.0"
           imageToLeft={true}
           header="Pałac w Międzylesiu"
           source="https://pl.wikipedia.org/wiki/Zamek_w_Mi%C4%99dzylesiu"
@@ -134,7 +142,8 @@ const Monuments = () => {
 
         <InfoSection
           image={autostrada}
-          imageAlt="Autorstwa Jacek Halicki - Praca własna, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=61771051"
+          imageUrl="https://commons.wikimedia.org/w/index.php?curid=61771051"
+          imageAlt="Autorstwa Jacek Halicki - Praca własna, CC BY-SA 4.0"
           imageToLeft={false}
           header="Autostrada Sudecka"
           source="https://pl.wikipedia.org/wiki/Droga_wojew%C3%B3dzka_nr_389"
@@ -166,7 +175,8 @@ const Monuments = () => {
 
         <InfoSection
           image={wiadukt}
-          imageAlt="Autorstwa Jacek Halicki - Praca własna, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=71673402"
+          imageUrl="https://commons.wikimedia.org/w/index.php?curid=71673402"
+          imageAlt="Autorstwa Jacek Halicki - Praca własna, CC BY-SA 4.0"
           imageToLeft={false}
           header="Wiadukt Kolejowy w Lewinie Kłodzkim"
           source="https://pl.wikipedia.org/wiki/Wiadukt_kolejowy_w_Lewinie_K%C5%82odzkim"
@@ -179,7 +189,8 @@ const Monuments = () => {
 
         <InfoSection
           image={naroznik}
-          imageAlt="Autorstwa 1089hruskapetr, CC BY 3.0, https://commons.wikimedia.org/w/index.php?curid=52419745"
+          imageUrl="https://commons.wikimedia.org/w/index.php?curid=52419745"
+          imageAlt="Autorstwa 1089hruskapetr, CC BY 3.0"
           imageToLeft={true}
           header="Narożnik - tragedia w Górach Stołowych"
           source="https://interwencja.polsatnews.pl/reportaz/2022-06-27/zabojstwo-w-kudowie-powiazane-ze-zbrodnia-w-gorach-stolowych-nowy-trop/"
@@ -195,7 +206,8 @@ const Monuments = () => {
 
         <InfoSection
           image={karol}
-          imageAlt="By Jacek Halicki - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=40262123"
+          imageUrl="https://commons.wikimedia.org/w/index.php?curid=40262123"
+          imageAlt="By Jacek Halicki - Own work, CC BY-SA 4.0"
           imageToLeft={false}
           header="Fort Karola"
           source="https://pl.wikipedia.org/wiki/Fort_Karola"
@@ -244,6 +256,111 @@ const Monuments = () => {
           w części. Przed wkroczeniem Armii Czerwonej wiele podziemnych
           konstrukcji zostało zniszczonych, a przynajmniej tunele do nich
           prowadzące zostały wysadzone.
+        </InfoSection>
+
+        <InfoSection
+          image={cerkiew}
+          imageUrl="https://commons.wikimedia.org/w/index.php?curid=1510320"
+          imageAlt="?"
+          imageToLeft={true}
+          header="Sokołowsko - cerkiew"
+          source="https://pl.wikipedia.org/wiki/Cerkiew_%C5%9Bw._Micha%C5%82a_Archanio%C5%82a_w_Soko%C5%82owsku"
+        >
+          Zbudowana w latach 1900–1901 z błogosławieństwa metropolity
+          petersburskiego Palladiusza, staraniem Bractwa św. Włodzimierza, dla
+          kuracjuszy przyjeżdżających do miejscowego uzdrowiska. Obecnie (od
+          1998 r.) cerkiew pełni funkcję świątyni parafialnej dla wiernych z
+          Sokołowska i regionu pogranicza polsko-czeskiego Cerkiew udostępniona
+          jest zwiedzającym od rana do zmierzchu. Jeżeli cerkiew jest zamknięta,
+          należy podejść do Domu św. Elżbiety.
+        </InfoSection>
+
+        <InfoSection
+          image={chelmsko}
+          imageAlt=""
+          imageToLeft={false}
+          header="Chełmsko Śląskie"
+          source="https://pl.wikipedia.org/wiki/Che%C5%82msko_%C5%9Al%C4%85skie"
+        >
+          Miasteczko sięgające korzeniami czasów średniowiecznych. W 1426 r.
+          zostało zniszczone w czasie wojen husyckich. Od XVI w. rozwija się
+          ponownie jako ośrodek sukiennictwa i płóciennictwa oraz handlu ich
+          wyrobami. W 2. połowie XVII w. miasto ożywiło się dzięki tkactwu
+          chałupniczemu, którego produkty były sprzedawane w całej Europie, a
+          nawet w Ameryce. W tym okresie powstały mieszczańskie kamienice w
+          rynku oraz zespoły drewnianych domów („Dwunastu Apostołów” i „Siedmiu
+          Braci”) przy drogach wyjazdowych. Po wojnie miasteczko podupadło,
+          tracąc znaczenie w tkactwie i w turystyce, utraciło w końcu prawa
+          miejskie
+        </InfoSection>
+
+        <InfoSection
+          image={karpniki}
+          imageAlt=""
+          imageToLeft={true}
+          header="Zamek w Karpnikach"
+          source="https://pl.wikipedia.org/wiki/Zamek_w_Karpnikach"
+        >
+          Zamek został zbudowany w XIV wieku prawdopodobnie przez Henryka
+          Czirna, właściciela Płoniny i Sokolca. W kolejny wiekach zamek był
+          kilkakrotnie przebudowywany, a jego obecny wygląd pochodzi z 1846 roku
+          W 1978 zamek przystosowano do użycia jako ośrodek wypoczynkowy, a
+          później sanatorium dla dzieci. Obecnie budowla jest własnością
+          prywatną i działa jako hotel i restauracja.
+        </InfoSection>
+
+        <InfoSection
+          image={mysla}
+          imageAlt=""
+          imageToLeft={false}
+          header="Pałac w Mysłakowicach"
+          source="https://pl.wikipedia.org/wiki/Pa%C5%82ac_w_Mys%C5%82akowicach"
+        >
+          Pałac wzniesiono w drugiej połowie XVIII wieku, przebudowano w
+          pierwszej połowie XIX w. W roku 1831 osiadłość odkupił król pruski
+          Fryderyk Wilhelm III i przekształcił ją w rezydencję cesarską. Po
+          wojnie siedziba PGRu, Leśnictwa i ostatecznie szkoły podstwowej.
+        </InfoSection>
+
+        <InfoSection
+          image={witosz}
+          imageToLeft={true}
+          header="Góra Witosza - Pomnik Bismarcka"
+          source="https://przyrodniczo.pl/cenne-tereny/gora-witosza/"
+        >
+          Niewielka, ale bardzo ciekawa góra znajdująca się nad miejscowością
+          Staniszów. Poza ciekawymi formami skalnymi na szczycie możemy zobaczyć
+          cokół po stojącym tu uprzednio pomniku kanclerze Otto von Bismarcka
+        </InfoSection>
+
+        <InfoSection
+          image={henryk}
+          imageToLeft={false}
+          header="Zamek Księcia Henryka"
+          source="https://pl.wikipedia.org/wiki/Zamek_Henryka"
+        >
+          Zamek myśliwski wybudowany w formie sztucznych ruin w 1806 r. na górze
+          Grodna, najwyższym szczycie Wzgórz Łomnickich. W latach 2015-2016
+          wyremontowany i udostępniony do zwiedzania. Obiekt wraz z wzniesieniem
+          wchodził w skład istniejącego tu parku krajobrazowego, którego centrum
+          był pałac w Staniszowie. zwiedzanie możliwe jest od maja do
+          października w godzinach 10.00-17.00.
+        </InfoSection>
+
+        <InfoSection
+          image={wang}
+          imageToLeft={true}
+          header="Świątynia Wang"
+          source="https://pl.wikipedia.org/wiki/%C5%9Awi%C4%85tynia_Wang"
+        >
+          Ewangelicki kościół przeniesiony w 1842 z miejscowości Vang, leżącej
+          nad jeziorem Vangsmjøsa w Norwegii. Konstrukcja kościoła wykonana jest
+          bez użycia gwoździ, wszystkie połączenia zrealizowano przy pomocy
+          drewnianych złączy ciesielskich. Wnętrze świątyni ozdobione jest
+          oryginalnymi zdobieniami i rzeźbami. Bryła obiektu podczas prac
+          konserwatorskich, zgodnie z XIX-wiecznymi trendami konserwatorskimi,
+          uległa znacznej rozbudowie. Dobudowano też wysoką kamienną dzwonnicę,
+          która chroni drewnianą świątynię przed wiatrem znad Śnieżki.
         </InfoSection>
       </Box>
     </>

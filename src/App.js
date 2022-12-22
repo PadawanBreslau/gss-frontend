@@ -24,12 +24,12 @@ import Written from "./components/info/Written";
 import Gallery from "./components/info/Gallery";
 import Trivia from "./components/info/Trivia";
 import Monuments from "./components/info/Monuments";
+import Towers from "./components/info/Towers";
+import Vicinity from "./components/info/Vicinity";
 import fb from "./images/fb.png";
 import greenTheme from "./components/themes/greenTheme";
 import mobileTheme from "./components/themes/mobileTheme";
-
 import "./styles/main.css";
-import { MonochromePhotosOutlined } from "@mui/icons-material";
 
 function App() {
   return (
@@ -64,7 +64,8 @@ function App() {
           <Route path="written" element={<Written />} />
           <Route path="galleries" element={<Gallery />} />
           <Route path="monuments" element={<Monuments />} />
-
+          <Route path="towers" element={<Towers />} />
+          <Route path="vicinity" element={<Vicinity />} />
         </Route>
       </Routes>
     </Container>
