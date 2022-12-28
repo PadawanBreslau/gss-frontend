@@ -37,7 +37,7 @@ const Accomodation100 = () => {
           <InternalListItem
             icon={<Star />}
             primaryText="Schronisko PTTK na Śnieżniku ~90km"
-            secondaryText="Na zejściu z Śnieżnika. Trzeba nieco odbić"
+            secondaryText="Na zejściu z Śnieżnika. Tak koło pół godziny drogi"
             url="http://www.schroniskonasniezniku.eu/"
           />
         </List>

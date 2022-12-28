@@ -38,7 +38,7 @@ const Accomodation500 = () => {
           <InternalListItem
             icon={<Star />}
             primaryText="Schronisko PTTK pod Łabskim Szczytów ~480km"
-            secondaryText="Na zejściu z Śnieżnika. Trzeba nieco odbić"
+            secondaryText="Schronisko na trasie GSS 2.0"
             url="https://naszeszlaki.com.pl/schronisko-pod-labskim-szczytem/"
           />
           <InternalListItem

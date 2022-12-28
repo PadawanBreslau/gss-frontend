@@ -20,7 +20,7 @@ const Accomodation200 = () => {
           />
           <InternalListItem
             icon={<Star />}
-            primaryText="Lądek-Zdrój. ~160km"
+            primaryText="Duszniki-Zdrój. ~160km"
             secondaryText="Mnóstwo opcji noclegowych."
           />
           <InternalListItem
