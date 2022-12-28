@@ -1,11 +1,36 @@
+import { NoEncryption } from "@mui/icons-material";
 import { Box, Typography, Link } from "@mui/material";
 import { Link as RouterLink } from "react-router-dom";
 
 const PanelBox = ({ title, image, url }) => {
   return (
-    <Box sx={{ display: "flex", flexDirection: "column", width: '50%', textAlign: 'center', mb: 2 }}>
-      <Link component={RouterLink} to={url}>
-        <Typography variant="h4" sx={{color: 'secondary.darker', mb: -1, fontWeight: 800}}>{title}</Typography>
+    <Box
+      sx={(theme) =>({
+        display: "flex",
+        flexDirection: "column",
+        width: "50%",
+        textAlign: "center",
+        mb: 1,
+        [theme.breakpoints.down("md")]: {
+          width: "100%",
+          mt: 1
+        }
+      })}
+    >
+      <Link component={RouterLink} to={url} sx={{textDecoration: 'none'}}>
+        <Typography
+          variant="h3"
+          sx={{
+            color: "primary.darker",
+            mb: -1,
+            fontWeight: 800,
+            textTransform: "uppercase",
+            fontFamily: '',
+
+          }}
+        >
+          {title}
+        </Typography>
         <Box
           component="img"
           className="panel"

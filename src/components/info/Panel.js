@@ -3,7 +3,7 @@ import PanelBox from "./PanelBox";
 
 import karkonosze from "../../images/photos/giant-mountains.jpg"
 import trail from "../../images/photos/trail.jpg"
-import valley from "../../images/photos/valley.jpg"
+import valley from "../../images/photos/most.jpg"
 import rain from "../../images/photos/rain.jpg"
 
 const Panel = () => {

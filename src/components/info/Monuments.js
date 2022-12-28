@@ -11,8 +11,8 @@ import miedzylesie from "../../images/history/miedzylesie.jpeg";
 import autostrada from "../../images/history/autostrada.jpeg";
 import chopin from "../../images/history/chopin.jpg";
 import wiadukt from "../../images/history/wiadukt.jpeg";
-import naroznik from "../../images/history/naroznik.jpeg";
-import karol from "../../images/history/karol.jpeg";
+import naroznik from "../../images/history/naroznik.jpg";
+import karol from "../../images/history/karol.jpg";
 import srebrna from "../../images/history/srebrna.jpg";
 import riese from "../../images/history/riese.jpg";
 import cerkiew from "../../images/history/cerkiew.jpeg";
@@ -189,8 +189,6 @@ const Monuments = () => {
 
         <InfoSection
           image={naroznik}
-          imageUrl="https://commons.wikimedia.org/w/index.php?curid=52419745"
-          imageAlt="Autorstwa 1089hruskapetr, CC BY 3.0"
           imageToLeft={true}
           header="Narożnik - tragedia w Górach Stołowych"
           source="https://interwencja.polsatnews.pl/reportaz/2022-06-27/zabojstwo-w-kudowie-powiazane-ze-zbrodnia-w-gorach-stolowych-nowy-trop/"
@@ -206,8 +204,6 @@ const Monuments = () => {
 
         <InfoSection
           image={karol}
-          imageUrl="https://commons.wikimedia.org/w/index.php?curid=40262123"
-          imageAlt="By Jacek Halicki - Own work, CC BY-SA 4.0"
           imageToLeft={false}
           header="Fort Karola"
           source="https://pl.wikipedia.org/wiki/Fort_Karola"

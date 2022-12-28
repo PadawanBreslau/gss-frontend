@@ -51,7 +51,7 @@ const Accomodation = () => {
         </Typography>
       </InfoTemplate>
       <InfoTemplate>
-        <Typography variant="p">
+        <Typography variant="p" >
           Jeśli myślisz, że powinienem coś dodać/usunąć/uzupełnić - napisz do mnie, najlepiej na <Link href="https://www.facebook.com/gssreloaded" sx={{color: 'secondary.darker', fontWeight: 800}}>Facebooku</Link>
         </Typography>
       </InfoTemplate>

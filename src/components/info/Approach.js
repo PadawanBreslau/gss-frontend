@@ -14,13 +14,17 @@ const Approach = () => {
 
       <Box sx={{ display: "flex", flexDirection: "row", flexWrap: "wrap" }}>
         <Box
-          sx={{
+          sx={(theme) => ({
             width: "45%",
             p: 2,
             backgroundColor: "teal.main",
             textAlign: "center",
             height: "600px",
-          }}
+            [theme.breakpoints.down("md")]: {
+              width: "100%",
+              height: "420px",
+            },
+          })}
         >
           <Typography variant="h2">Dojazd do Barda</Typography>
           <Box>
@@ -50,13 +54,17 @@ const Approach = () => {
           </Typography>
         </Box>
         <Box
-          sx={{
+          sx={(theme) => ({
             width: "45%",
             p: 2,
             backgroundColor: "teal.lighter",
             textAlign: "center",
             height: "600px",
-          }}
+            [theme.breakpoints.down("md")]: {
+              width: "100%",
+              height: "420px",
+            },
+          })}
         >
           <Typography variant="h2">Dojazd do Świeradowa-Zdroju</Typography>
           <Box>

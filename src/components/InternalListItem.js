@@ -25,8 +25,8 @@ const InternalListItem = ({
       </ListItemAvatar>
       {!url && (
         <ListItemText
-          primaryTypographyProps={{ fontSize: "1.5rem" }}
-          secondaryTypographyProps={{ fontSize: "1.2rem" }}
+          primaryTypographyProps={{ fontSize: "1.2rem" }}
+          secondaryTypographyProps={{ fontSize: "1rem" }}
           primary={primaryText}
           secondary={secondaryText}
         />
@@ -35,8 +35,8 @@ const InternalListItem = ({
       {url && (
         <Link href={url} target="_blank" color='primary.darker'>
           <ListItemText
-            primaryTypographyProps={{ fontSize: "1.5rem" }}
-            secondaryTypographyProps={{ fontSize: "1.2rem" }}
+            primaryTypographyProps={{ fontSize: "1.2rem" }}
+            secondaryTypographyProps={{ fontSize: "1rem" }}
             primary={primaryText}
             secondary={secondaryText}
           />

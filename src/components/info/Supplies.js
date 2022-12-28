@@ -32,7 +32,7 @@ const Supplies = () => {
       >
         {shopsVisible && (
           <List
-            sx={{ width: "100%", bgcolor: "teal.light", minHeight: "200px" }}
+            sx={{ width: "100%", bgcolor: "teal.light", minHeight: "100px" }}
           >
             <InternalListItem
               icon={<Shop />}

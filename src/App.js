@@ -26,6 +26,11 @@ import Trivia from "./components/info/Trivia";
 import Monuments from "./components/info/Monuments";
 import Towers from "./components/info/Towers";
 import Vicinity from "./components/info/Vicinity";
+import Nature from "./components/info/Nature";
+import Trail from "./components/info/Trail";
+import KGP from "./components/info/KGP";
+import Verify from "./components/info/Verify";
+import RouteDesc from "./components/info/RouteDesc";
 import fb from "./images/fb.png";
 import greenTheme from "./components/themes/greenTheme";
 import mobileTheme from "./components/themes/mobileTheme";
@@ -52,7 +57,6 @@ function App() {
           <Route path="partners" element={<Partners />} />
           <Route path="info" element={<Panel />} />
           <Route path="support" element={<Support />} />
-          <Route path="trail" element={<Panel />} />
           <Route path="trivia" element={<Trivia />} />
           <Route path="media" element={<Panel />} />
           <Route path="approach" element={<Approach />} />
@@ -66,6 +70,11 @@ function App() {
           <Route path="monuments" element={<Monuments />} />
           <Route path="towers" element={<Towers />} />
           <Route path="vicinity" element={<Vicinity />} />
+          <Route path="nature" element={<Nature />} />
+          <Route path="trail" element={<Trail />} />
+          <Route path="kgp" element={<KGP />} />
+          <Route path="verify" element={<Verify />} />
+          <Route path="route_description" element={<RouteDesc />} />
         </Route>
       </Routes>
     </Container>
@@ -79,9 +88,7 @@ function Layout() {
   return (
     <ThemeProvider theme={theme}>
       <Header isMobile={isMobileMatch}>
-        <MenuItem url="/" label="O projekcie" />
         <MenuItem url="/route" label="Trasa" />
-        <MenuItem url="/fkt" label="Rekordy" />
         <MenuItem url="/info" label="Baza Wiedzy" />
         {!isMobileMatch && <MenuItem url="/partners" label="Partnerzy" />}
         <a href="https://www.facebook.com/gssreloaded" target="_blank" rel="noreferrer">
