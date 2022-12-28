@@ -24,7 +24,7 @@
     "node": "18.0.0"
   },
   "scripts": {
-    "start": "serve build",
+    "start": "serve -s build",
     "dev": "BROWSER=none react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
