@@ -1,10 +1,13 @@
 import { Box, Typography, Link } from "@mui/material";
+import { Link as RouterLink } from "react-router-dom";
+
 
 const Breadcrumb = ({ parent, parentUrl, name }) => {
   return (
     <Box sx={{ maxHeight: "1rem", mb: 2, ml: 1 }}>
       <Link
-        href="/info"
+       component={RouterLink}
+        to="/info"
         sx={(theme) => ({
           fontSize: "typography.fontSize",
           fontColor: "primary.dark",
@@ -20,7 +23,8 @@ const Breadcrumb = ({ parent, parentUrl, name }) => {
       </Link>
       {parent && (
         <Link
-          href={parentUrl}
+          component={RouterLink}
+          to={parentUrl}
           sx={(theme) => ({
             fontSize: "1rem",
             fontColor: "primary.dark",
@@ -37,7 +41,8 @@ const Breadcrumb = ({ parent, parentUrl, name }) => {
         </Link>
       )}
       <Link
-        href="#"
+       component={RouterLink}
+        to="#"
         sx={(theme) => ({
           fontSize: "typography.fontSize",
           fontColor: "primary.dark",
