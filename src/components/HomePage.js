@@ -77,7 +77,7 @@ class HomePage extends Component {
             <InternalListItem
               icon={<Landscape />}
               primaryText="Szczyty"
-              secondaryText="Śnieżke, Śnieżnik, Szczeliniec, Jagodna, Wielka Sowa, Włodzicka Góra, Waligóra, Skalnik, Sokoliki, Borówkowa, Smrek, Smrk i wiele, wiele innych"
+              secondaryText="Śnieżka, Śnieżnik, Szczeliniec, Jagodna, Wielka Sowa, Włodzicka Góra, Waligóra, Skalnik, Sokoliki, Borówkowa, Smrek, Smrk i wiele, wiele innych"
             />
             <InternalListItem
               icon={<Castle />}

@@ -31,6 +31,7 @@ import Trail from "./components/info/Trail";
 import KGP from "./components/info/KGP";
 import Verify from "./components/info/Verify";
 import RouteDesc from "./components/info/RouteDesc";
+import Contact from "./components/Contact";
 import fb from "./images/fb.png";
 import greenTheme from "./components/themes/greenTheme";
 import mobileTheme from "./components/themes/mobileTheme";
@@ -53,6 +54,7 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<HomePage />} />
           <Route path="route" element={<GSSRoute />} />
+          <Route path="contact" element={<Contact />} />
           <Route path="fkt" element={<FKT />} />
           <Route path="partners" element={<Partners />} />
           <Route path="info" element={<Panel />} />
@@ -91,6 +93,7 @@ function Layout() {
         <MenuItem url="/route" label="Trasa" />
         <MenuItem url="/info" label="Baza Wiedzy" />
         {!isMobileMatch && <MenuItem url="/partners" label="Partnerzy" />}
+        <MenuItem url="/contact" label="Kontakt" />
         <a href="https://www.facebook.com/gssreloaded" target="_blank" rel="noreferrer">
           <Box
             component="img"
