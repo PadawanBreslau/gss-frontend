@@ -39,7 +39,7 @@ class HomePage extends Component {
         </Box>
         <Button variant="contained" sx={{ mr: 1, mb: 2 }}>
           <Link
-            href="/gss20-full-official-2022.gpx"
+            href="/gss20-full-official-2023.gpx"
             target="_blank"
             rel="noreferrer"
             download
