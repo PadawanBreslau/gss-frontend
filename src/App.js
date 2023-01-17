@@ -1,10 +1,5 @@
 import { Routes, Route, Outlet } from "react-router-dom";
-import {
-  Container,
-  ThemeProvider,
-  useMediaQuery,
-  Box,
-} from "@mui/material";
+import { Container, ThemeProvider, useMediaQuery, Box } from "@mui/material";
 import { green } from "@mui/material/colors";
 import Header from "./components/Header";
 import HomePage from "./components/HomePage";
@@ -32,7 +27,9 @@ import KGP from "./components/info/KGP";
 import Verify from "./components/info/Verify";
 import RouteDesc from "./components/info/RouteDesc";
 import Contact from "./components/Contact";
+import Serce from "./components/Serce";
 import fb from "./images/fb.png";
+import serce from "./images/serce.jpeg";
 import greenTheme from "./components/themes/greenTheme";
 import mobileTheme from "./components/themes/mobileTheme";
 import "./styles/main.css";
@@ -46,8 +43,8 @@ function App() {
         backgroundColor: green[50],
         pb: 20,
         [theme.breakpoints.down("md")]: {
-          width: '100%'
-        }
+          width: "100%",
+        },
       })}
     >
       <Routes>
@@ -77,6 +74,7 @@ function App() {
           <Route path="kgp" element={<KGP />} />
           <Route path="verify" element={<Verify />} />
           <Route path="route_description" element={<RouteDesc />} />
+          <Route path="serce-dziecka" element={<Serce />} />
         </Route>
       </Routes>
     </Container>
@@ -94,7 +92,15 @@ function Layout() {
         <MenuItem url="/info" label="Baza Wiedzy" />
         {!isMobileMatch && <MenuItem url="/partners" label="Partnerzy" />}
         <MenuItem url="/contact" label="Kontakt" />
-        <a href="https://www.facebook.com/gssreloaded" target="_blank" rel="noreferrer">
+        {!isMobileMatch && (
+          <MenuItem url="/serce-dziecka" label="Serce Dziecka" />
+        )}
+
+        <a
+          href="https://www.facebook.com/gssreloaded"
+          target="_blank"
+          rel="noreferrer"
+        >
           <Box
             component="img"
             className="fb"

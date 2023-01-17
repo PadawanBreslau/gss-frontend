@@ -5,7 +5,7 @@ import Logo from "./Logo";
 
 class Header extends Component {
   render() {
-    const marginTop = this.props.isMobile ? 1 : 4
+    const marginTop = this.props.isMobile ? 1 : 3;
     return (
       <Box
         className="header"
