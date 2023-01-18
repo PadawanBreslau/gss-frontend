@@ -1,6 +1,7 @@
 import { Box, ImageList, Typography } from "@mui/material";
 import serce from "../images/serce.jpeg";
 import gss2 from "../images/logo-green.svg";
+import szybkie from "../images/szybkie.jpg";
 import empty from "../images/white.png";
 import GridItem from "./GridItem";
 
@@ -77,7 +78,8 @@ const Serce = () => {
         gap={2}
       >
         <GridItem counter={10} src={gss2} alt="GSS 2.0"/>
-        <GridItem counter={90} src={empty} alt="Wolne"/>
+        <GridItem counter={2} src={szybkie} alt="Szybkie Podróże"/>
+        <GridItem counter={88} src={empty} alt="Wolne"/>
       </ImageList>
     </Box>
   );
