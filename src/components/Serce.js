@@ -5,6 +5,8 @@ import szybkie from "../images/serce/szybkie.jpg";
 import ania from "../images/serce/ania.png";
 import visu from "../images/serce/visu.png";
 import poltrax from "../images/serce/poltrax.png";
+import sliwka from "../images/serce/sliwka.jpg";
+import wloczykij from "../images/serce/wloczykij.png";
 import empty from "../images/serce/white.png";
 import GridItem from "./GridItem";
 
@@ -36,9 +38,11 @@ const Serce = () => {
         <GridItem counter={10} src={gss2} alt="GSS 2.0" />
         <GridItem counter={2} src={szybkie} alt="Szybkie Podróże" />
         <GridItem counter={1} src={ania} alt="Anka Sekulska" />
+        <GridItem counter={7} src={sliwka} alt="Magda" />
         <GridItem counter={5} src={visu} alt="Visuality" />
         <GridItem counter={5} src={poltrax} alt="Potrax" />
-        <GridItem counter={77} src={empty} alt="Wolne" />
+        <GridItem counter={3} src={wloczykij} alt="Marcin Drozdowski" />
+        <GridItem counter={67} src={empty} alt="Wolne" />
       </ImageList>
 
       <Box
