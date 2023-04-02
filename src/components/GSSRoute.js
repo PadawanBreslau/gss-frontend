@@ -13,7 +13,7 @@ const GSSRoute = () => {
           download
         >
           <Typography variant="h5" color="primary.lighter">
-            GPXtrasy: Start w Bardzie
+            GPX trasy: Start w Bardzie
           </Typography>
         </Link>
       </Button>
@@ -40,7 +40,7 @@ const GSSRoute = () => {
       </Button>
       <Box>
         <Typography variant="h3">Część 1</Typography>
-        <MapaTurystyczna mtUuid="3yd3b" horizontalMap withLink />
+        <MapaTurystyczna mtUuid="3waad" horizontalMap withLink />
       </Box>
       <Box>
         <Typography variant="h3">Część 2</Typography>
