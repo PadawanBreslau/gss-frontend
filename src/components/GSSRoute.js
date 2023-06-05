@@ -20,7 +20,7 @@ const GSSRoute = () => {
 
       <Button variant="contained" sx={{ mr: 1, mb: 2 }}>
         <Link
-          href="/gss20-full-official-2023-reversed.gpx"
+          href="/gss20-full-official-2023-reverse.gpx"
           target="_blank"
           rel="noreferrer"
           download
