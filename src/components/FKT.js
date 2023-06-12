@@ -3,6 +3,7 @@ import { List } from "@mui/material";
 import { Person } from "@mui/icons-material";
 import InternalListItem from "./InternalListItem";
 import Breadcrumb from "./info/Breadcrumb";
+import pw from "../images/fkt/pw.jpg";
 import pp from "../images/fkt/pp.jpg";
 import ms from "../images/fkt/ms.jpg";
 import ac from "../images/fkt/ac.jpg";
@@ -14,6 +15,11 @@ class FKT extends Component {
         <Breadcrumb parent="Trasa" parentUrl="/trail" name="Rekordy trasy" />
 
         <List sx={{ width: "100%", bgcolor: "secondary.lighter" }}>
+          <InternalListItem
+            avatar={pw}
+            primaryText="Piotr Witaszewski, 9d, 11h, 58m"
+            secondaryText="Czerwiec, 2023. Całość, start w Bardzie"
+          />
           <InternalListItem
             avatar={pp}
             primaryText="Piotr Piasecki, 17d, 10h"
