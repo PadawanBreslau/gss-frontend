@@ -38,14 +38,6 @@ const GSSRoute = () => {
           </Typography>
         </Link>
       </Button>
-      <Box>
-        <Typography variant="h3">Część 1</Typography>
-        <MapaTurystyczna mtUuid="3waad" horizontalMap withLink />
-      </Box>
-      <Box>
-        <Typography variant="h3">Część 2</Typography>
-        <MapaTurystyczna mtUuid="3yd34" horizontalMap withLink />
-      </Box>
     </Box>
   );
 };
