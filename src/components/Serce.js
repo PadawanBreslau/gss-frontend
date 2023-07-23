@@ -13,14 +13,39 @@ import GridItem from "./GridItem";
 const Serce = () => {
   return (
     <Box>
-      <Box sx={{margin: 'auto', mb: 10, ml: 20}}>
-      <a
-        href="https://www.sercedziecka.org.pl/"
-        target="_blank"
-        rel="noreferrer"
-      >
-        <Box component="img" className="serce" src={serce} />
-      </a>
+      <Box sx={{ margin: "auto", mb: 10, ml: 20, display: 'flex', justifyContent: 'space-between' }}>
+        <Box
+          sx={{
+            width: "40%",
+            margin: "auto",
+            mb: 3,
+            p: 1,
+            border: 1,
+            borderRadius: 2,
+            backgroundColor: "secondary.light",
+          }}
+        >
+          <p>Stan na 16.07.2023</p>
+
+          <h2>Zebraliśmy już 451zł </h2>
+          <h2>Zrobiliśmy już około 3100km </h2>
+        </Box>
+
+        <a
+          href="https://www.sercedziecka.org.pl/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <Box component="img" className="serce" src={serce}           sx={{
+            width: "50%",
+            margin: "auto",
+            ml: 1,
+            mt: 2,
+            p: 1,
+            border: 1,
+            borderRadius: 2,
+          }}  />
+        </a>
       </Box>
       <Box sx={{ width: "90%", margin: "auto", mb: 3, mt: 3 }}>
         <Typography variant="h3">

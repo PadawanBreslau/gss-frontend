@@ -7,6 +7,7 @@ import pw from "../images/fkt/pw.jpg";
 import pp from "../images/fkt/pp.jpg";
 import ms from "../images/fkt/ms.jpg";
 import ac from "../images/fkt/ac.jpg";
+import zp from "../images/fkt/zp.jpg";
 
 class FKT extends Component {
   render() {
@@ -34,6 +35,11 @@ class FKT extends Component {
             avatar={Person}
             primaryText="Marcin Drozdowski, 19d 10h"
             secondaryText="Maj, 2022. Całość, start w Bardzie."
+          />
+          <InternalListItem
+            avatar={zp}
+            primaryText="Marcin Makaruk, 19d 15h"
+            secondaryText="Czerwic/Lipiec, 2023. Całość, start w Bardzie."
           />
           <InternalListItem
             avatar={ac}
