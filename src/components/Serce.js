@@ -1,6 +1,7 @@
 import { Box, ImageList, Typography } from "@mui/material";
 import serce from "../images/serce/serce.jpg";
 import gss2 from "../images/logo-green.svg";
+import wss from "../images/serce/wss.png";
 import szybkie from "../images/serce/szybkie.jpg";
 import ania from "../images/serce/ania.png";
 import visu from "../images/serce/visu.png";
@@ -25,10 +26,10 @@ const Serce = () => {
             backgroundColor: "secondary.light",
           }}
         >
-          <p>Stan na 16.07.2023</p>
+          <p>Stan na 01.08.2023</p>
 
-          <h2>Zebraliśmy już 451zł </h2>
-          <h2>Zrobiliśmy już około 3100km </h2>
+          <h2>Zebraliśmy już 570zł </h2>
+          <h2>Zrobiliśmy już około 3600km </h2>
         </Box>
 
         <a
@@ -61,13 +62,14 @@ const Serce = () => {
         gap={2}
       >
         <GridItem counter={10} src={gss2} alt="GSS 2.0" />
+        <GridItem counter={10} src={wss} alt="Wielki Szlak Sudecki" />
         <GridItem counter={2} src={szybkie} alt="Szybkie Podróże" />
         <GridItem counter={1} src={ania} alt="Anka Sekulska" />
         <GridItem counter={7} src={sliwka} alt="Magda" />
         <GridItem counter={5} src={visu} alt="Visuality" />
         <GridItem counter={5} src={poltrax} alt="Potrax" />
         <GridItem counter={3} src={wloczykij} alt="Marcin Drozdowski" />
-        <GridItem counter={67} src={empty} alt="Wolne" />
+        <GridItem counter={57} src={empty} alt="Wolne" />
       </ImageList>
 
       <Box

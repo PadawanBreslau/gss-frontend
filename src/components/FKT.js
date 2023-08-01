@@ -4,6 +4,7 @@ import { Person } from "@mui/icons-material";
 import InternalListItem from "./InternalListItem";
 import Breadcrumb from "./info/Breadcrumb";
 import pw from "../images/fkt/pw.jpg";
+import es from "../images/fkt/es.jpg";
 import pp from "../images/fkt/pp.jpg";
 import ms from "../images/fkt/ms.jpg";
 import ac from "../images/fkt/ac.jpg";
@@ -20,6 +21,11 @@ class FKT extends Component {
             avatar={pw}
             primaryText="Piotr Witaszewski, 9d, 11h, 58m"
             secondaryText="Czerwiec, 2023. Całość, start w Bardzie"
+          />
+          <InternalListItem
+            avatar={es}
+            primaryText="Ewelina Solak, 15d, 7h, 13m"
+            secondaryText="Lipiec, 2023. Całość, start w Bardzie"
           />
           <InternalListItem
             avatar={pp}
