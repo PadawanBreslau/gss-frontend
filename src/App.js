@@ -28,8 +28,8 @@ import Verify from "./components/info/Verify";
 import RouteDesc from "./components/info/RouteDesc";
 import Contact from "./components/Contact";
 import Serce from "./components/Serce";
+import Tracker from "./components/Tracker";
 import fb from "./images/fb.png";
-import serce from "./images/serce.jpeg";
 import greenTheme from "./components/themes/greenTheme";
 import mobileTheme from "./components/themes/mobileTheme";
 import "./styles/main.css";
@@ -75,6 +75,7 @@ function App() {
           <Route path="verify" element={<Verify />} />
           <Route path="route_description" element={<RouteDesc />} />
           <Route path="serce-dziecka" element={<Serce />} />
+          <Route path="tracker" element={<Tracker />} />
         </Route>
       </Routes>
     </Container>
