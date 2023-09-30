@@ -7,6 +7,7 @@ import village from "../../images/photos/village.jpg";
 import train from "../../images/photos/train.jpg";
 import field from "../../images/photos/field.jpg";
 import ptx from "../../images/mapa-ptx.png";
+import odznaki from "../../images/odznaki.jpg";
 
 const Support = () => {
   return (
@@ -18,6 +19,7 @@ const Support = () => {
         <PanelBox url="/supplies" image={field} title="Zaopatrzenie" />
         <PanelBox url="/tips" image={karkonosze} title="Porady" />
         <PanelBox url="/tracker" image={ptx} title="Trackery" />
+        <PanelBox url="/odznaki" image={odznaki} title="Odznaki" />
       </Box>
     </>
   );

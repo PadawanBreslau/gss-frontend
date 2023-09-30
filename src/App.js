@@ -29,6 +29,7 @@ import RouteDesc from "./components/info/RouteDesc";
 import Contact from "./components/Contact";
 import Serce from "./components/Serce";
 import Tracker from "./components/Tracker";
+import Odznaki from "./components/Odznaki";
 import fb from "./images/fb.png";
 import greenTheme from "./components/themes/greenTheme";
 import mobileTheme from "./components/themes/mobileTheme";
@@ -76,6 +77,7 @@ function App() {
           <Route path="route_description" element={<RouteDesc />} />
           <Route path="serce-dziecka" element={<Serce />} />
           <Route path="tracker" element={<Tracker />} />
+          <Route path="odznaki" element={<Odznaki />} />
         </Route>
       </Routes>
     </Container>

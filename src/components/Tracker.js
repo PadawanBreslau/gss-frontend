@@ -3,7 +3,6 @@ import poltrax from "../images/poltrax.png";
 
 
 const Tracker = () => {
-  console.log("??")
   return (
     <Box>
       <Box>
