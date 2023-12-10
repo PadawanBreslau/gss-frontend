@@ -15,6 +15,7 @@ import mp from "../images/fkt/mp.png";
 import ls from "../images/fkt/ls.jpg";
 import bb from "../images/fkt/bb.jpg";
 import dc from "../images/fkt/dc.jpg";
+import wloczykij from "../images/fkt/wloczykij.png";
 
 class FKT extends Component {
   render() {
@@ -68,7 +69,7 @@ class FKT extends Component {
                 secondaryText="Wrzesień, 2021. Pierwszy zdobywca trasy"
               />
               <InternalListItem
-                avatar={Person}
+                avatar={wloczykij}
                 primaryText="Marcin Drozdowski, 19d 10h"
                 secondaryText="Maj, 2022"
               />

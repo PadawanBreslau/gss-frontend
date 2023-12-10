@@ -26,10 +26,10 @@ const Serce = () => {
             backgroundColor: "secondary.light",
           }}
         >
-          <p>Stan na 01.08.2023</p>
+          <p>Stan na 01.12.2023</p>
 
-          <h2>Zebraliśmy już 570zł </h2>
-          <h2>Zrobiliśmy już około 3600km </h2>
+          <h2>Zebraliśmy już 1490zł </h2>
+          <h2>Zrobiliśmy już około 4650km </h2>
         </Box>
 
         <a

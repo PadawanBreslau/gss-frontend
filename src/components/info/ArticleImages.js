@@ -13,3 +13,4 @@ export { default as zielony12 } from "../../images/articles/zielony12.jpg";
 export { default as zielony13 } from "../../images/articles/zielony13.jpg";
 export { default as zielony14 } from "../../images/articles/zielony14.jpg";
 export { default as zielony15 } from "../../images/articles/zielony15.jpg";
+export { default as dominik } from "../../images/articles/dominik.jpg";

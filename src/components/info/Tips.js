@@ -7,6 +7,7 @@ import {
   Looks4,
   Looks5,
   Looks6,
+  Forest
 } from "@mui/icons-material";
 import InternalListItem from "../InternalListItem";
 import Breadcrumb from "./Breadcrumb";
@@ -33,6 +34,83 @@ const Tips = () => {
             backgroundColor: "teal.main",
           }}
         >
+          <TipTemplate header="Michał Piotrowski - porady FTK">
+            <List
+              sx={{
+                width: "100%",
+                bgcolor: "teal.lighter",
+                minHeight: "200px",
+              }}
+            >
+              <InternalListItem
+                icon={<LooksOne />}
+                primaryText="Wgranie tracku do zegarka. Szczególnie przy nawigowaniu w nocy, przy zmęczeniu i w kiepsko oznaczonych fragmentach wibracje przy zboczeniu z drogi ratują życie"
+              />
+              <InternalListItem
+                icon={<LooksTwo />}
+                primaryText="Przemyśl i sprawdź system przechowywania wody. Wziałem niefunkcjonujący camelback i traciłem dużo czasu na korzystanie z klasycznych butele"
+                />
+              <InternalListItem
+                icon={<Looks3 />}
+                primaryText="Świetnie sprawdziła mi się 'linka' z dwóch dużych połączonych trytytek, którą przyczepiłem do plecaka. Idealny sznurek do suszenia prania (klamerki są super). Zasadniczo nie zdarzylo mi się, aby coś nie wyschło przez cały dzień wędrówki"
+              />
+              <InternalListItem
+                icon={<Looks4 />}
+                primaryText="Czołówka to wyposażenie obowiązkowe (baterie do wymiany na świeże przed wyruszeniem), ale ja teraz jeszcze dodałbym jakieś światełko 'z tyłu' na plecach. Lekkie, z przypinkami, najczęściej to tania chińszczyzna, ale na tych kilka odcinków kiedy po nocy chodziłem przy asfalcie powinny wystarczyć. Bezpieczeństwa nigdy za wiele."
+              />
+              <InternalListItem
+                icon={<Looks5 />}
+                primaryText="Mini powerbank, który mieści się w kieszeni/pasie biodrowym. Dzięki niemu mogłem bardzo łatwo doładowywać Garmina na postojach (nawet krótkich)."
+              />
+              <InternalListItem
+                icon={<Looks6 />}
+                primaryText="Buty do biegania trailowego. Skoro ludki biegną takie UTMB (170km i 10k przewyższeń) w lekkich butach biegowych, to tym bardziej da się w nich komfortowo i bezpiecznie przejść szlak. Używałem Altra MontBlanc - na trasie sprawdziły się wyśmienicie - na tyle, że o dwóch dużych bąblach na małych palcach dowiadywałem się dopiero pod prysznicem bo nie czułem ich przez cały dzień chodzenia."
+              />
+              <InternalListItem
+                icon={<Forest />}
+                primaryText="Zaplanuj wszystko co możesz wcześniej. I nie mówię o planowaniu wieczorem następnego dnia, tylko zanim w ogóle wyruszysz z domu. Kilometry i przewyższenia, trudne miejsca/odbicia/obejścia, miejsca dłuższych postojów, sklepy, źródła wody, ewentualne namiary na awaryjne noclegi (tak do 2-3h marszu przed docelowym). Wrzuć w komórkę lub najlepiej wydrukować z podziałem na dni i trzymać konkretny dzień przy dupie non stop."
+              />
+              <InternalListItem
+                icon={<Forest />}
+                primaryText="Przygotowanie siłowe dało mi naprawdę olbrzymią przewagę - nigdy nie czułem się tak mocny w górach. Odwiedzenie siłowni polecam każdemu tak z minimum na miesiąc/dwa przed startem."
+              />
+              
+            </List>
+          </TipTemplate>
+{/*           
+          <TipTemplate header="">
+            <List
+              sx={{
+                width: "100%",
+                bgcolor: "teal.lighter",
+                minHeight: "200px",
+              }}
+            >
+              <InternalListItem
+                icon={<LooksOne />}
+                primaryText=""
+              />
+              <InternalListItem
+                icon={<LooksTwo />}
+                primaryText=""
+                />
+              <InternalListItem
+                icon={<Looks3 />}
+                primaryText=""
+              />
+              <InternalListItem
+                icon={<Looks4 />}
+                primaryText=""
+              />
+              <InternalListItem
+                icon={<Looks5 />}
+                primaryText=""
+              />
+            </List>
+          </TipTemplate> */}
+
+
+
           <TipTemplate header="Piotr (Strefa Wędrowca)">
             <List
               sx={{

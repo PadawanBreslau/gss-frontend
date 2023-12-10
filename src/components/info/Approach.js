@@ -72,8 +72,7 @@ const Approach = () => {
               <InternalListItem
                 icon={<Train />}
                 primaryText="Pociągiem"
-                secondaryText="Aby skorzystać z pociągu trzeba najpierw dostać się do Szklarskiej Poręby lub Gryfowa Śląskiego. 
-              Jeśli masz jeszcze wolne, można zrobić na deser fajną wycieczkę do tego pierwszego, bo dojazd komunikacją jest tam też słaby"
+                secondaryText="Od grudnia 2023 kursują pociągi do Gryfowa Śląskiego, gdzie trzeba się dalej przesiadać. Choć jest to poprawa sytuacji którą mielśmy wcześnie, wciąż dojazd/wyjazd ze Świeradowa jest dużo trudniejszy jak z Barda"
               />
               <InternalListItem
                 icon={<DirectionsBus />}
@@ -83,7 +82,7 @@ const Approach = () => {
             </List>
           </Box>
           <Typography variant="h5" sx={{ mt: 2, textAlign: "left" }}>
-            Świeradów jest słabo skomunikowany z resztą świata, ale duży rozwój
+            Świeradów jest wciąż przeciętnie skomunikowany z resztą świata, ale duży rozwój
             tej miejscowości daje nadzieję na poprawę tej sytuacji
           </Typography>
         </Box>
