@@ -106,7 +106,7 @@ class FKT extends Component {
             <List sx={{ width: "100%", bgcolor: "secondary.main" }}>
               <InternalListItem
                 avatar={ls}
-                primaryText="Łukasz Sowada, 15d 10h"
+                primaryText="Łukasz Sowada, 15d 8h 53m"
                 secondaryText="Wrzesień, 2023."
               />
               <InternalListItem
