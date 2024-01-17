@@ -20,7 +20,7 @@
     "web-vitals": "^2.1.0"
   },
   "engines": {
-    "node": "18.0.0"
+    "node": "18.19.0"
   },
   "scripts": {
     "start": "serve -s build",
