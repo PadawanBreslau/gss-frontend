@@ -4,6 +4,8 @@ import InternalListItem from "./InternalListItem";
 import Breadcrumb from "./info/Breadcrumb";
 import { Box, Typography, List } from "@mui/material";
 
+import generic from "../images/fkt/gen.jpg";
+
 import pw from "../images/fkt/pw.jpg";
 import es from "../images/fkt/es.jpg";
 import pp from "../images/fkt/pp.jpg";
@@ -54,6 +56,18 @@ class FKT extends Component {
                 secondaryText="Sierpień, 2023"
               />
               <InternalListItem
+                avatar={generic}
+                url={'https://www.facebook.com/events/391836073516114'}
+                primaryText="Piotr Stańczak, Jarosław Broniszewski, 12d ?h ?m"
+                secondaryText="Wiosna, 2024"
+              />
+              <InternalListItem
+                avatar={generic}
+                primaryText="Martyna Piszczek, 14d 12h 47m"
+                secondaryText="Sierpień, 2024"
+              />
+
+              <InternalListItem
                 avatar={es}
                 primaryText="Ewelina Solak, 15d, 7h, 13m"
                 secondaryText="Lipiec, 2023"
@@ -66,6 +80,7 @@ class FKT extends Component {
               <InternalListItem
                 avatar={ms}
                 primaryText="Mateusz Stawarz, 18d 9h 45m"
+                url='https://zieloniwpodrozy.pl/obryw-bardzki-klodzka-gora-zloty-stok-gss-2-0-dzien-1/'
                 secondaryText="Wrzesień, 2021. Pierwszy zdobywca trasy"
               />
               <InternalListItem
@@ -81,12 +96,18 @@ class FKT extends Component {
               <InternalListItem
                 avatar={dc}
                 primaryText="Dominik Chełstowski, 20d 3h 30m"
+                url='https://mygss20.blogspot.com/'
                 secondaryText="Czerwic/Lipiec, 2023"
               />
               <InternalListItem
                 avatar={ac}
                 primaryText="Anna Czarnota, Na raty"
                 secondaryText="Jesień, 2021"
+              />
+              <InternalListItem
+                avatar={generic}
+                primaryText="Tomasz Wiński, Na raty"
+                secondaryText="Lato/Jesień, 2024"
               />
             </List>
           </Box>
@@ -104,6 +125,12 @@ class FKT extends Component {
           >
             <Typography variant="h2">Świeradów-Bardo</Typography>
             <List sx={{ width: "100%", bgcolor: "secondary.main" }}>
+              <InternalListItem
+                avatar={generic}
+                primaryText="Sebastian Stawinoga, 14d 12h 51m"
+                secondaryText="Sierpień, 2024"
+              />
+
               <InternalListItem
                 avatar={ls}
                 primaryText="Łukasz Sowada, 15d 8h 53m"
