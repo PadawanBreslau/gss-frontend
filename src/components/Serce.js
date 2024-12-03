@@ -26,10 +26,10 @@ const Serce = () => {
             backgroundColor: "secondary.light",
           }}
         >
-          <p>Stan na 01.12.2023</p>
+          <p>Stan na 03.12.2024</p>
 
-          <h2>Zebraliśmy już 1490zł </h2>
-          <h2>Zrobiliśmy już około 4650km </h2>
+          <h2>Zebraliśmy już 2065zł </h2>
+          <h2>Zrobiliśmy już około 7150km </h2>
         </Box>
 
         <a
@@ -62,7 +62,6 @@ const Serce = () => {
         gap={2}
       >
         <GridItem counter={10} src={gss2} alt="GSS 2.0" />
-        <GridItem counter={10} src={wss} alt="Wielki Szlak Sudecki" />
         <GridItem counter={2} src={szybkie} alt="Szybkie Podróże" />
         <GridItem counter={1} src={ania} alt="Anka Sekulska" />
         <GridItem counter={7} src={sliwka} alt="Magda" />
